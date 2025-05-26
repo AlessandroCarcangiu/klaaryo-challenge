@@ -1,0 +1,81 @@
+services:
+  django:
+    container_name: klaaryo-django
+    build:
+      context: .
+      dockerfile: Dockerfile
+#    command: >
+#      sh -c "python manage.py migrate &&
+#             python manage.py runserver 0.0.0.0:8000 >> /var/log/django/django.log 2>&1"
+    command: ./stack/django/django-dev.sh >> /var/log/django/django.log 2>&1
+    volumes:
+      - .:/app
+      - ./logs/django:/var/log/django
+    ports:
+      - "${DJANGO_PORT}:${DJANGO_PORT}"
+    depends_on:
+      - db
+      - redis
+    env_file:
+      - .env
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  grpc:
+    container_name: klaaryo-grpc
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: >
+      sh -c "python manage.py grpcserver >> /var/log/grpc/grpc.log 2>&1"
+    volumes:
+      - .:/app
+      - ./logs/grpc:/var/log/grpc
+    ports:
+      - "${GRPC_PORT}:${GRPC_PORT}"
+    depends_on:
+      - db
+      - redis
+    env_file:
+      - .env
+
+  celery:
+    container_name: klaaryo-celery
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: ./stack/celery/celery-dev.sh
+    volumes:
+      - .:/app
+      - ./logs/celery:/var/log/celery
+    depends_on:
+      - db
+      - redis
+    env_file:
+      - .env
+
+  redis:
+    container_name: klaaryo-redis
+    image: redis:7
+    ports:
+      - "6379:6379"
+
+  db:
+    container_name: klaaryo-db
+    image: postgres:14
+    environment:
+      POSTGRES_DB: ${DB_NAME:-db_name_default}
+      POSTGRES_USER: ${DB_USER:-db_user_default}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-db_password_default}
+    volumes:
+      - pgdata:/var/lib/postgresql/initial_data
+    ports:
+      - "5432:5432"
+    env_file:
+      - .env
+
+volumes:
+  pgdata:

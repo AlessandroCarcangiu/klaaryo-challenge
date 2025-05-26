@@ -1,0 +1,177 @@
+type: collection.insomnia.rest/5.0
+name: Klaaryo-Challenge
+meta:
+  id: wrk_8655fddb351941f4b9d5a4d77e8ae8c8
+  created: 1748105920166
+  modified: 1748105920166
+collection:
+  - name: Token
+    meta:
+      id: fld_fd77e6f6e46c403d970e78557c8ba2ae
+      created: 1748105937307
+      modified: 1748107833570
+      sortKey: -1748105937307
+    children:
+      - url: http://{{ _.host }}:{{ _.port }}/api/token/
+        name: Login - Admin
+        meta:
+          id: req_0bac79c65a354614af0846f911f400c4
+          created: 1748105947598
+          modified: 1748107886889
+          isPrivate: false
+          sortKey: -1748105947598
+        method: POST
+        body:
+          mimeType: multipart/form-data
+          params:
+            - id: pair_30f77fb2b3e54c9193f4114e185c3851
+              name: username
+              value: admin
+              disabled: false
+            - id: pair_349f92e084fc46f8962e3e84f3af3d70
+              name: password
+              value: passwordklaaryo
+              disabled: false
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+          - name: User-Agent
+            value: insomnia/11.1.0
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://{{ _.host }}:{{ _.port }}/api/token/refresh
+        name: Refresh token
+        meta:
+          id: req_3aea67788a8344edb9b6baf67db559d7
+          created: 1748106050748
+          modified: 1748167521898
+          isPrivate: false
+          sortKey: -1743436836264.5
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        authentication:
+          type: bearer
+          token: "{% response 'body', 'req_0bac79c65a354614af0846f911f400c4',
+            'b64::JC5hY2Nlc3M=::46b', 'never', 60 %}"
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: Candidates
+    meta:
+      id: fld_1e6d97571f4b4ce5b6c08b60309c9fca
+      created: 1748105943168
+      modified: 1748165572722
+      sortKey: -1748105943168
+    children:
+      - url: http://{{ _.host }}:{{ _.port }}/api/candidates/
+        name: Create Candidate
+        meta:
+          id: req_118fb7f9d83845db9333ebf65ba725c9
+          created: 1748106073400
+          modified: 1748173795699
+          isPrivate: false
+          sortKey: -1748106073400
+        method: POST
+        body:
+          mimeType: multipart/form-data
+          params:
+            - id: pair_0d26dc057bb148d1bc9ad9ec313768a2
+              name: full_name
+              value: Alessandro Carcangiu
+              disabled: false
+            - id: pair_793b5a071ee04fcbb51b46d023ff2ef8
+              name: email
+              value: sandro.carcangiu@gmail.com
+              disabled: false
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+          - name: User-Agent
+            value: insomnia/11.1.0
+        authentication:
+          type: bearer
+          token: "{% response 'body', 'req_0bac79c65a354614af0846f911f400c4',
+            'b64::JC5hY2Nlc3M=::46b', 'never', 60 %}"
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://{{ _.host }}:{{ _.port }}/api/candidates/{% response 'body',
+          'req_118fb7f9d83845db9333ebf65ba725c9', 'b64::JC5pZA==::46b', 'never',
+          60 %}
+        name: Get details Candidate
+        meta:
+          id: req_faa65870bf40469991ab39938912bff5
+          created: 1748106215031
+          modified: 1748169085682
+          isPrivate: false
+          sortKey: -1748106010499
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/11.1.0
+        authentication:
+          type: bearer
+          token: "{% response 'body', 'req_0bac79c65a354614af0846f911f400c4',
+            'b64::JC5hY2Nlc3M=::46b', 'never', 60 %}"
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: localhost:{{ _.grpc_port }}
+        name: Get Candidate status
+        meta:
+          id: greq_e1337903dd99460989a35095887c5297
+          created: 1748165578304
+          modified: 1748172995865
+          isPrivate: false
+          sortKey: -1748165578304
+        body:
+          text: >-
+            {
+              "id": "{% response 'body', 'req_118fb7f9d83845db9333ebf65ba725c9', 'b64::JC5pZA==::46b', 'never', 60 %}"
+            }
+        protoFileId: pf_36f511228cdb47a494f668cc8ea2ded5
+        protoMethodName: /candidate.CandidateStatusService/GetCandidateStatus
+        reflectionApi:
+          enabled: false
+          url: https://buf.build
+          module: buf.build/connectrpc/eliza
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_a27ab5acc6c2d8962720432efb0abd472574577c
+    created: 1748105920179
+    modified: 1748107833566
+environments:
+  name: Base Environment
+  meta:
+    id: env_a27ab5acc6c2d8962720432efb0abd472574577c
+    created: 1748105920172
+    modified: 1748173810663
+    isPrivate: false
+  data:
+    host: localhost
+    port: "8000"
+    grpc_port: "50051"

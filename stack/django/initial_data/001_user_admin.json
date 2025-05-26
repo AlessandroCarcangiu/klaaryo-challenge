@@ -1,0 +1,19 @@
+[
+    {
+        "model": "auth.user",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$1000000$QkUOLZs8828BPQgK2VgaBI$zmbw99QfR3iU9K+fo/1VHEaL196v0TcHlgnoMUisC0U=",
+            "is_superuser": true,
+            "username": "admin",
+            "first_name": "Admin Django",
+            "last_name": "",
+            "email": "admin-django@mail.com",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2020-03-17T11:38:28.472Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    }
+]

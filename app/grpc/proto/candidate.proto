@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package candidate;
+
+message CheckResult {
+  string name = 1;
+  string result = 2;
+}
+
+message CandidateIdRequest {
+  string id = 1;
+}
+
+message CandidateStatusResponse {
+  string status = 1;
+  repeated CheckResult screening_log = 2;
+}
+
+service CandidateStatusService {
+  rpc GetCandidateStatus (CandidateIdRequest) returns (CandidateStatusResponse);
+}

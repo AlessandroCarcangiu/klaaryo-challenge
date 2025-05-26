@@ -1,0 +1,980 @@
+[2025-05-25 10:08:49,042: INFO/MainProcess] Task screening.tasks.run_screening[cee079b4-e786-497e-ab61-05fea73ab81c] received
+[2025-05-25 10:08:49,048: WARNING/ForkPoolWorker-16] time.struct_time(tm_year=2025, tm_mon=5, tm_mday=25, tm_hour=10, tm_min=8, tm_sec=49, tm_wday=6, tm_yday=145, tm_isdst=0) - Start screening for candidate with id: 482b2ea5-540b-4ad4-9d12-1645d254fb0a
+[2025-05-25 10:08:49,081: INFO/ForkPoolWorker-16] Task screening.tasks.run_screening[cee079b4-e786-497e-ab61-05fea73ab81c] succeeded in 0.0331820310002513s: 'time.struct_time(tm_year=2025, tm_mon=5, tm_mday=25, tm_hour=10, tm_min=8, tm_sec=49, tm_wday=6, tm_yday=145, tm_isdst=0) - Screening complete for candidate with id: 482b2ea5-540b-4ad4-9d12-1645d254fb0a'
+/usr/local/lib/python3.12/site-packages/celery/platforms.py:841: SecurityWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  warnings.warn(SecurityWarning(ROOT_DISCOURAGED.format(
+ 
+ -------------- celery@42b06303cf49 v5.5.2 (immunity)
+--- ***** ----- 
+-- ******* ---- Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36 2025-05-25 10:10:25
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         app:0x7f8a7639d490
+- ** ---------- .> transport:   redis://redis:6379/0
+- ** ---------- .> results:     redis://redis:6379/0
+- *** --- * --- .> concurrency: 20 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . screening.tasks.run_screening
+  . screening.tasks.test_task
+
+[2025-05-25 10:10:27,115: INFO/MainProcess] Connected to redis://redis:6379/0
+[2025-05-25 10:10:27,130: INFO/MainProcess] mingle: searching for neighbors
+[2025-05-25 10:10:28,152: INFO/MainProcess] mingle: all alone
+[2025-05-25 10:10:28,168: INFO/MainProcess] celery@42b06303cf49 ready.
+[2025-05-25 10:10:37,278: INFO/MainProcess] Task screening.tasks.run_screening[cf9a6dbf-e1cc-46be-98af-c6c8f40d2d1c] received
+[2025-05-25 10:10:37,285: WARNING/ForkPoolWorker-16] time.struct_time(tm_year=2025, tm_mon=5, tm_mday=25, tm_hour=10, tm_min=10, tm_sec=37, tm_wday=6, tm_yday=145, tm_isdst=0) - Start screening for candidate with id: a59a6226-8df6-4bc0-bb69-d6dda4b1442e
+[2025-05-25 10:10:37,328: WARNING/ForkPoolWorker-16] {'check_format': 'Passed', 'check_duplicate': 'No duplicates'}
+[2025-05-25 10:10:37,336: INFO/ForkPoolWorker-16] Task screening.tasks.run_screening[cf9a6dbf-e1cc-46be-98af-c6c8f40d2d1c] succeeded in 0.05346656700021413s: 'time.struct_time(tm_year=2025, tm_mon=5, tm_mday=25, tm_hour=10, tm_min=10, tm_sec=37, tm_wday=6, tm_yday=145, tm_isdst=0) - Screening complete for candidate with id: a59a6226-8df6-4bc0-bb69-d6dda4b1442e'
+/usr/local/lib/python3.12/site-packages/celery/platforms.py:841: SecurityWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  warnings.warn(SecurityWarning(ROOT_DISCOURAGED.format(
+ 
+ -------------- celery@3825ad987af3 v5.5.2 (immunity)
+--- ***** ----- 
+-- ******* ---- Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36 2025-05-25 10:26:55
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         app:0x7f1c68335190
+- ** ---------- .> transport:   redis://redis:6379/0
+- ** ---------- .> results:     redis://redis:6379/0
+- *** --- * --- .> concurrency: 20 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . screening.tasks.run_screening
+  . screening.tasks.test_task
+
+[2025-05-25 10:26:56,614: INFO/MainProcess] Connected to redis://redis:6379/0
+[2025-05-25 10:26:56,617: INFO/MainProcess] mingle: searching for neighbors
+[2025-05-25 10:26:57,628: INFO/MainProcess] mingle: all alone
+[2025-05-25 10:26:57,646: INFO/MainProcess] celery@3825ad987af3 ready.
+/usr/local/lib/python3.12/site-packages/celery/platforms.py:841: SecurityWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  warnings.warn(SecurityWarning(ROOT_DISCOURAGED.format(
+ 
+ -------------- celery@7601efb2aa51 v5.5.2 (immunity)
+--- ***** ----- 
+-- ******* ---- Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36 2025-05-25 10:29:32
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         app:0x7f5238d65430
+- ** ---------- .> transport:   redis://redis:6379/0
+- ** ---------- .> results:     redis://redis:6379/0
+- *** --- * --- .> concurrency: 20 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . screening.tasks.run_screening
+  . screening.tasks.test_task
+
+[2025-05-25 10:29:33,922: INFO/MainProcess] Connected to redis://redis:6379/0
+[2025-05-25 10:29:33,929: INFO/MainProcess] mingle: searching for neighbors
+[2025-05-25 10:29:34,943: INFO/MainProcess] mingle: all alone
+[2025-05-25 10:29:34,956: INFO/MainProcess] celery@7601efb2aa51 ready.
+[2025-05-25 10:29:59,740: INFO/MainProcess] Task screening.tasks.run_screening[48619c8e-dd86-4346-8b1b-5d91a286f4e3] received
+[2025-05-25 10:29:59,745: WARNING/ForkPoolWorker-16] time.struct_time(tm_year=2025, tm_mon=5, tm_mday=25, tm_hour=10, tm_min=29, tm_sec=59, tm_wday=6, tm_yday=145, tm_isdst=0) - Start screening for candidate with id: ccc770ae-c814-42c9-80de-f61abfd3febd
+[2025-05-25 10:29:59,772: WARNING/ForkPoolWorker-16] {'check_format': 'Passed', 'check_duplicate': 'No duplicates'}
+[2025-05-25 10:29:59,794: INFO/ForkPoolWorker-16] Task screening.tasks.run_screening[48619c8e-dd86-4346-8b1b-5d91a286f4e3] succeeded in 0.04920585799845867s: 'time.struct_time(tm_year=2025, tm_mon=5, tm_mday=25, tm_hour=10, tm_min=29, tm_sec=59, tm_wday=6, tm_yday=145, tm_isdst=0) - Screening complete for candidate with id: ccc770ae-c814-42c9-80de-f61abfd3febd'
+/usr/local/lib/python3.12/site-packages/celery/platforms.py:841: SecurityWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  warnings.warn(SecurityWarning(ROOT_DISCOURAGED.format(
+ 
+ -------------- celery@b302a9c75d3a v5.5.2 (immunity)
+--- ***** ----- 
+-- ******* ---- Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36 2025-05-25 10:36:08
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         app:0x7f4c3e72d580
+- ** ---------- .> transport:   redis://redis:6379/0
+- ** ---------- .> results:     redis://redis:6379/0
+- *** --- * --- .> concurrency: 20 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . screening.tasks.run_screening
+  . screening.tasks.test_task
+
+[2025-05-25 10:36:09,089: INFO/MainProcess] Connected to redis://redis:6379/0
+[2025-05-25 10:36:09,093: INFO/MainProcess] mingle: searching for neighbors
+[2025-05-25 10:36:10,101: INFO/MainProcess] mingle: all alone
+[2025-05-25 10:36:10,114: INFO/MainProcess] celery@b302a9c75d3a ready.
+/usr/local/lib/python3.12/site-packages/celery/platforms.py:841: SecurityWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  warnings.warn(SecurityWarning(ROOT_DISCOURAGED.format(
+ 
+ -------------- celery@274ec679430d v5.5.2 (immunity)
+--- ***** ----- 
+-- ******* ---- Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36 2025-05-25 10:38:08
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         app:0x7f69d1fe4650
+- ** ---------- .> transport:   redis://redis:6379/0
+- ** ---------- .> results:     redis://redis:6379/0
+- *** --- * --- .> concurrency: 20 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . screening.tasks.run_screening
+  . screening.tasks.test_task
+
+[2025-05-25 10:38:09,935: INFO/MainProcess] Connected to redis://redis:6379/0
+[2025-05-25 10:38:09,946: INFO/MainProcess] mingle: searching for neighbors
+[2025-05-25 10:38:10,960: INFO/MainProcess] mingle: all alone
+[2025-05-25 10:38:10,979: INFO/MainProcess] celery@274ec679430d ready.
+[2025-05-25 10:38:24,347: INFO/MainProcess] Task screening.tasks.run_screening[f5194579-416b-4cf7-a61e-ecafa5d68e64] received
+[2025-05-25 10:38:24,354: WARNING/ForkPoolWorker-16] time.struct_time(tm_year=2025, tm_mon=5, tm_mday=25, tm_hour=10, tm_min=38, tm_sec=24, tm_wday=6, tm_yday=145, tm_isdst=0) - Start screening for candidate with id: 0611be34-7d00-464e-8d3b-91d97cc835fc
+[2025-05-25 10:38:24,400: WARNING/ForkPoolWorker-16] {'check_format': 'Passed', 'check_duplicate': 'No duplicates'}
+[2025-05-25 10:38:24,409: INFO/ForkPoolWorker-16] Task screening.tasks.run_screening[f5194579-416b-4cf7-a61e-ecafa5d68e64] succeeded in 0.05593286200019065s: 'time.struct_time(tm_year=2025, tm_mon=5, tm_mday=25, tm_hour=10, tm_min=38, tm_sec=24, tm_wday=6, tm_yday=145, tm_isdst=0) - Screening complete for candidate with id: 0611be34-7d00-464e-8d3b-91d97cc835fc'
+/usr/local/lib/python3.12/site-packages/celery/platforms.py:841: SecurityWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  warnings.warn(SecurityWarning(ROOT_DISCOURAGED.format(
+ 
+ -------------- celery@77ce0f62120d v5.5.2 (immunity)
+--- ***** ----- 
+-- ******* ---- Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36 2025-05-25 10:40:09
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         app:0x7fe2a4ac0200
+- ** ---------- .> transport:   redis://redis:6379/0
+- ** ---------- .> results:     redis://redis:6379/0
+- *** --- * --- .> concurrency: 20 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . screening.tasks.run_screening
+  . screening.tasks.test_task
+
+[2025-05-25 10:40:10,533: INFO/MainProcess] Connected to redis://redis:6379/0
+[2025-05-25 10:40:10,538: INFO/MainProcess] mingle: searching for neighbors
+[2025-05-25 10:40:11,549: INFO/MainProcess] mingle: all alone
+[2025-05-25 10:40:11,563: INFO/MainProcess] celery@77ce0f62120d ready.
+[2025-05-25 10:40:44,516: INFO/MainProcess] Task screening.tasks.run_screening[42f6b8bf-c6d2-415f-8389-da163ef5b11a] received
+[2025-05-25 10:40:44,521: WARNING/ForkPoolWorker-16] time.struct_time(tm_year=2025, tm_mon=5, tm_mday=25, tm_hour=10, tm_min=40, tm_sec=44, tm_wday=6, tm_yday=145, tm_isdst=0) - Start screening for candidate with id: f84b037a-cb15-41f9-aac2-9f236e4d95da
+[2025-05-25 10:40:44,562: WARNING/ForkPoolWorker-16] {'check_format': 'Passed', 'check_duplicate': 'No duplicates'}
+[2025-05-25 10:40:44,572: INFO/ForkPoolWorker-16] Task screening.tasks.run_screening[42f6b8bf-c6d2-415f-8389-da163ef5b11a] succeeded in 0.05214503999923181s: 'time.struct_time(tm_year=2025, tm_mon=5, tm_mday=25, tm_hour=10, tm_min=40, tm_sec=44, tm_wday=6, tm_yday=145, tm_isdst=0) - Screening complete for candidate with id: f84b037a-cb15-41f9-aac2-9f236e4d95da'
+/usr/local/lib/python3.12/site-packages/celery/platforms.py:841: SecurityWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  warnings.warn(SecurityWarning(ROOT_DISCOURAGED.format(
+ 
+ -------------- celery@77fe7bd8e640 v5.5.2 (immunity)
+--- ***** ----- 
+-- ******* ---- Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36 2025-05-25 10:44:52
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         app:0x7fae1c6855b0
+- ** ---------- .> transport:   redis://redis:6379/0
+- ** ---------- .> results:     redis://redis:6379/0
+- *** --- * --- .> concurrency: 20 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . screening.tasks.run_screening
+  . screening.tasks.test_task
+
+[2025-05-25 10:44:53,046: INFO/MainProcess] Connected to redis://redis:6379/0
+[2025-05-25 10:44:53,049: INFO/MainProcess] mingle: searching for neighbors
+[2025-05-25 10:44:54,059: INFO/MainProcess] mingle: all alone
+[2025-05-25 10:44:54,083: INFO/MainProcess] celery@77fe7bd8e640 ready.
+/usr/local/lib/python3.12/site-packages/celery/platforms.py:841: SecurityWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  warnings.warn(SecurityWarning(ROOT_DISCOURAGED.format(
+ 
+ -------------- celery@214aa9eac5be v5.5.2 (immunity)
+--- ***** ----- 
+-- ******* ---- Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36 2025-05-25 10:46:20
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         app:0x7f0ecaab5160
+- ** ---------- .> transport:   redis://redis:6379/0
+- ** ---------- .> results:     redis://redis:6379/0
+- *** --- * --- .> concurrency: 20 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . screening.tasks.run_screening
+  . screening.tasks.test_task
+
+[2025-05-25 10:46:21,655: INFO/MainProcess] Connected to redis://redis:6379/0
+[2025-05-25 10:46:21,659: INFO/MainProcess] mingle: searching for neighbors
+[2025-05-25 10:46:22,670: INFO/MainProcess] mingle: all alone
+[2025-05-25 10:46:22,683: INFO/MainProcess] celery@214aa9eac5be ready.
+/usr/local/lib/python3.12/site-packages/celery/platforms.py:841: SecurityWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  warnings.warn(SecurityWarning(ROOT_DISCOURAGED.format(
+ 
+ -------------- celery@45fb09adf631 v5.5.2 (immunity)
+--- ***** ----- 
+-- ******* ---- Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36 2025-05-25 10:48:15
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         app:0x7f283c610e00
+- ** ---------- .> transport:   redis://redis:6379/0
+- ** ---------- .> results:     redis://redis:6379/0
+- *** --- * --- .> concurrency: 20 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . screening.tasks.run_screening
+  . screening.tasks.test_task
+
+[2025-05-25 10:48:16,866: INFO/MainProcess] Connected to redis://redis:6379/0
+[2025-05-25 10:48:16,874: INFO/MainProcess] mingle: searching for neighbors
+[2025-05-25 10:48:17,880: INFO/MainProcess] mingle: all alone
+[2025-05-25 10:48:17,890: INFO/MainProcess] celery@45fb09adf631 ready.
+[2025-05-25 10:50:09,621: INFO/MainProcess] Task screening.tasks.run_screening[66981160-6b65-4248-af1b-371e8b7b7758] received
+[2025-05-25 10:50:09,631: WARNING/ForkPoolWorker-16] time.struct_time(tm_year=2025, tm_mon=5, tm_mday=25, tm_hour=10, tm_min=50, tm_sec=9, tm_wday=6, tm_yday=145, tm_isdst=0) - Start screening for candidate with id: 561563d7-d5dd-4044-96d2-f0ea253beb92
+[2025-05-25 10:50:09,691: WARNING/ForkPoolWorker-16] {'check_format': 'Passed', 'check_duplicate': 'No duplicates'}
+[2025-05-25 10:50:09,707: INFO/ForkPoolWorker-16] Task screening.tasks.run_screening[66981160-6b65-4248-af1b-371e8b7b7758] succeeded in 0.07842492099916853s: 'time.struct_time(tm_year=2025, tm_mon=5, tm_mday=25, tm_hour=10, tm_min=50, tm_sec=9, tm_wday=6, tm_yday=145, tm_isdst=0) - Screening complete for candidate with id: 561563d7-d5dd-4044-96d2-f0ea253beb92'
+[2025-05-25 11:01:11,499: INFO/MainProcess] Task screening.tasks.run_screening[30d5a10a-ab02-4496-ae88-35aeaa3345d7] received
+[2025-05-25 11:01:11,502: WARNING/ForkPoolWorker-16] time.struct_time(tm_year=2025, tm_mon=5, tm_mday=25, tm_hour=11, tm_min=1, tm_sec=11, tm_wday=6, tm_yday=145, tm_isdst=0) - Start screening for candidate with id: 6c8e0520-3eff-47b0-bc97-1fe06bda7d4e
+[2025-05-25 11:01:11,517: WARNING/ForkPoolWorker-16] {'check_format': 'Passed', 'check_duplicate': 'No duplicates'}
+[2025-05-25 11:01:11,524: INFO/ForkPoolWorker-16] Task screening.tasks.run_screening[30d5a10a-ab02-4496-ae88-35aeaa3345d7] succeeded in 0.022713234000548255s: 'time.struct_time(tm_year=2025, tm_mon=5, tm_mday=25, tm_hour=11, tm_min=1, tm_sec=11, tm_wday=6, tm_yday=145, tm_isdst=0) - Screening complete for candidate with id: 6c8e0520-3eff-47b0-bc97-1fe06bda7d4e'
+/usr/local/lib/python3.12/site-packages/celery/platforms.py:841: SecurityWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  warnings.warn(SecurityWarning(ROOT_DISCOURAGED.format(
+ 
+ -------------- celery@97e8689a809d v5.5.2 (immunity)
+--- ***** ----- 
+-- ******* ---- Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36 2025-05-25 11:06:32
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         app:0x7fd4c6658740
+- ** ---------- .> transport:   redis://redis:6379/0
+- ** ---------- .> results:     redis://redis:6379/0
+- *** --- * --- .> concurrency: 20 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . screening.tasks.run_screening
+  . screening.tasks.test_task
+
+[2025-05-25 11:06:33,607: INFO/MainProcess] Connected to redis://redis:6379/0
+[2025-05-25 11:06:33,612: INFO/MainProcess] mingle: searching for neighbors
+[2025-05-25 11:06:34,626: INFO/MainProcess] mingle: all alone
+[2025-05-25 11:06:34,656: INFO/MainProcess] celery@97e8689a809d ready.
+/usr/local/lib/python3.12/site-packages/celery/platforms.py:841: SecurityWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  warnings.warn(SecurityWarning(ROOT_DISCOURAGED.format(
+ 
+ -------------- celery@6617d727df07 v5.5.2 (immunity)
+--- ***** ----- 
+-- ******* ---- Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36 2025-05-25 11:08:51
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         app:0x7f50261610d0
+- ** ---------- .> transport:   redis://redis:6379/0
+- ** ---------- .> results:     redis://redis:6379/0
+- *** --- * --- .> concurrency: 20 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . screening.tasks.run_screening
+  . screening.tasks.test_task
+
+[2025-05-25 11:08:53,008: INFO/MainProcess] Connected to redis://redis:6379/0
+[2025-05-25 11:08:53,013: INFO/MainProcess] mingle: searching for neighbors
+[2025-05-25 11:08:54,026: INFO/MainProcess] mingle: all alone
+[2025-05-25 11:08:54,062: INFO/MainProcess] celery@6617d727df07 ready.
+[2025-05-25 11:09:35,087: INFO/MainProcess] Task screening.tasks.run_screening[65b0066e-39f7-4f7c-9857-32b659df1bc6] received
+[2025-05-25 11:09:35,091: WARNING/ForkPoolWorker-16] time.struct_time(tm_year=2025, tm_mon=5, tm_mday=25, tm_hour=11, tm_min=9, tm_sec=35, tm_wday=6, tm_yday=145, tm_isdst=0) - Start screening for candidate with id: 9ef957f6-371a-4c9f-bb75-d7c31e5970b7
+[2025-05-25 11:09:35,151: INFO/MainProcess] Task screening.tasks.run_screening[65b0066e-39f7-4f7c-9857-32b659df1bc6] received
+[2025-05-25 11:09:35,176: INFO/ForkPoolWorker-16] Task screening.tasks.run_screening[65b0066e-39f7-4f7c-9857-32b659df1bc6] retry: Retry in 180s: TypeError('Object of type Check is not JSON serializable')
+/usr/local/lib/python3.12/site-packages/celery/platforms.py:841: SecurityWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  warnings.warn(SecurityWarning(ROOT_DISCOURAGED.format(
+ 
+ -------------- celery@9714ccf0ac6f v5.5.2 (immunity)
+--- ***** ----- 
+-- ******* ---- Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36 2025-05-25 11:11:45
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         app:0x7f40cee31010
+- ** ---------- .> transport:   redis://redis:6379/0
+- ** ---------- .> results:     redis://redis:6379/0
+- *** --- * --- .> concurrency: 20 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . screening.tasks.run_screening
+  . screening.tasks.test_task
+
+[2025-05-25 11:11:46,852: INFO/MainProcess] Connected to redis://redis:6379/0
+[2025-05-25 11:11:46,887: INFO/MainProcess] mingle: searching for neighbors
+[2025-05-25 11:11:47,948: INFO/MainProcess] mingle: all alone
+[2025-05-25 11:11:47,997: INFO/MainProcess] celery@9714ccf0ac6f ready.
+[2025-05-25 11:12:11,634: INFO/MainProcess] Task screening.tasks.run_screening[06df8e4e-a7cc-40d2-8872-1b5ec98ee375] received
+[2025-05-25 11:12:11,637: WARNING/ForkPoolWorker-16] time.struct_time(tm_year=2025, tm_mon=5, tm_mday=25, tm_hour=11, tm_min=12, tm_sec=11, tm_wday=6, tm_yday=145, tm_isdst=0) - Start screening for candidate with id: 3fd8169f-ce0e-4a8d-ba29-3da381f084f0
+[2025-05-25 11:12:11,676: INFO/ForkPoolWorker-16] Task screening.tasks.run_screening[06df8e4e-a7cc-40d2-8872-1b5ec98ee375] succeeded in 0.03916630099956819s: 'time.struct_time(tm_year=2025, tm_mon=5, tm_mday=25, tm_hour=11, tm_min=12, tm_sec=11, tm_wday=6, tm_yday=145, tm_isdst=0) - Screening complete for candidate with id: 3fd8169f-ce0e-4a8d-ba29-3da381f084f0'
+/usr/local/lib/python3.12/site-packages/celery/platforms.py:841: SecurityWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  warnings.warn(SecurityWarning(ROOT_DISCOURAGED.format(
+ 
+ -------------- celery@74d7b3e0ca5e v5.5.2 (immunity)
+--- ***** ----- 
+-- ******* ---- Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36 2025-05-25 11:16:03
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         app:0x7f5258c213d0
+- ** ---------- .> transport:   redis://redis:6379/0
+- ** ---------- .> results:     redis://redis:6379/0
+- *** --- * --- .> concurrency: 20 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . screening.tasks.run_screening
+  . screening.tasks.test_task
+
+[2025-05-25 11:16:05,331: INFO/MainProcess] Connected to redis://redis:6379/0
+[2025-05-25 11:16:05,355: INFO/MainProcess] mingle: searching for neighbors
+[2025-05-25 11:16:06,372: INFO/MainProcess] mingle: all alone
+[2025-05-25 11:16:06,398: INFO/MainProcess] celery@74d7b3e0ca5e ready.
+[2025-05-25 11:16:27,813: INFO/MainProcess] Task screening.tasks.run_screening[bdf2df21-2526-405a-9154-dc4073d38e30] received
+[2025-05-25 11:16:27,820: WARNING/ForkPoolWorker-16] time.struct_time(tm_year=2025, tm_mon=5, tm_mday=25, tm_hour=11, tm_min=16, tm_sec=27, tm_wday=6, tm_yday=145, tm_isdst=0) - Start screening for candidate with id: 573b4f66-f853-4907-8abb-7c9f2c572197
+[2025-05-25 11:16:27,903: INFO/ForkPoolWorker-16] Task screening.tasks.run_screening[bdf2df21-2526-405a-9154-dc4073d38e30] succeeded in 0.08387852699888754s: 'time.struct_time(tm_year=2025, tm_mon=5, tm_mday=25, tm_hour=11, tm_min=16, tm_sec=27, tm_wday=6, tm_yday=145, tm_isdst=0) - Screening complete for candidate with id: 573b4f66-f853-4907-8abb-7c9f2c572197'
+/usr/local/lib/python3.12/site-packages/celery/platforms.py:841: SecurityWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  warnings.warn(SecurityWarning(ROOT_DISCOURAGED.format(
+ 
+ -------------- celery@a85b1d2b54ea v5.5.2 (immunity)
+--- ***** ----- 
+-- ******* ---- Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36 2025-05-25 11:20:05
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         app:0x7fd1ef0750a0
+- ** ---------- .> transport:   redis://redis:6379/0
+- ** ---------- .> results:     redis://redis:6379/0
+- *** --- * --- .> concurrency: 20 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . screening.tasks.run_screening
+  . screening.tasks.test_task
+
+[2025-05-25 11:20:07,283: INFO/MainProcess] Connected to redis://redis:6379/0
+[2025-05-25 11:20:07,287: INFO/MainProcess] mingle: searching for neighbors
+[2025-05-25 11:20:08,307: INFO/MainProcess] mingle: all alone
+[2025-05-25 11:20:08,331: INFO/MainProcess] celery@a85b1d2b54ea ready.
+[2025-05-25 11:20:41,313: INFO/MainProcess] Task screening.tasks.run_screening[4cd494ce-0c63-4f41-a5ca-82891f051af0] received
+[2025-05-25 11:20:41,319: WARNING/ForkPoolWorker-16] time.struct_time(tm_year=2025, tm_mon=5, tm_mday=25, tm_hour=11, tm_min=20, tm_sec=41, tm_wday=6, tm_yday=145, tm_isdst=0) - Start screening for candidate with id: 5d0486b0-74fe-4b4d-8f6d-47bb0ff85225
+[2025-05-25 11:20:41,375: INFO/ForkPoolWorker-16] Task screening.tasks.run_screening[4cd494ce-0c63-4f41-a5ca-82891f051af0] succeeded in 0.05841372800023237s: 'time.struct_time(tm_year=2025, tm_mon=5, tm_mday=25, tm_hour=11, tm_min=20, tm_sec=41, tm_wday=6, tm_yday=145, tm_isdst=0) - Screening complete for candidate with id: 5d0486b0-74fe-4b4d-8f6d-47bb0ff85225'
+/usr/local/lib/python3.12/site-packages/celery/platforms.py:841: SecurityWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  warnings.warn(SecurityWarning(ROOT_DISCOURAGED.format(
+ 
+ -------------- celery@758bebf7d86e v5.5.2 (immunity)
+--- ***** ----- 
+-- ******* ---- Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36 2025-05-25 11:29:15
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         app:0x7f18d4fec470
+- ** ---------- .> transport:   redis://redis:6379/0
+- ** ---------- .> results:     redis://redis:6379/0
+- *** --- * --- .> concurrency: 20 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . screening.tasks.run_screening
+  . screening.tasks.test_task
+
+[2025-05-25 11:29:16,354: INFO/MainProcess] Connected to redis://redis:6379/0
+[2025-05-25 11:29:16,360: INFO/MainProcess] mingle: searching for neighbors
+[2025-05-25 11:29:17,374: INFO/MainProcess] mingle: all alone
+[2025-05-25 11:29:17,406: INFO/MainProcess] celery@758bebf7d86e ready.
+[2025-05-25 11:29:27,244: INFO/MainProcess] Task screening.tasks.run_screening[4b10f72e-873a-4ace-b5c6-f556b4ebf1dc] received
+[2025-05-25 11:29:27,249: WARNING/ForkPoolWorker-16] time.struct_time(tm_year=2025, tm_mon=5, tm_mday=25, tm_hour=11, tm_min=29, tm_sec=27, tm_wday=6, tm_yday=145, tm_isdst=0) - Start screening for candidate with id: 00811107-4049-416b-a128-04684e4215f8
+[2025-05-25 11:29:27,299: INFO/ForkPoolWorker-16] Task screening.tasks.run_screening[4b10f72e-873a-4ace-b5c6-f556b4ebf1dc] succeeded in 0.051059107998298714s: 'time.struct_time(tm_year=2025, tm_mon=5, tm_mday=25, tm_hour=11, tm_min=29, tm_sec=27, tm_wday=6, tm_yday=145, tm_isdst=0) - Screening complete for candidate with id: 00811107-4049-416b-a128-04684e4215f8'
+/usr/local/lib/python3.12/site-packages/celery/platforms.py:841: SecurityWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  warnings.warn(SecurityWarning(ROOT_DISCOURAGED.format(
+ 
+ -------------- celery@bd47e3f77390 v5.5.2 (immunity)
+--- ***** ----- 
+-- ******* ---- Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36 2025-05-25 11:45:32
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         app:0x7f8f3a0e14f0
+- ** ---------- .> transport:   redis://redis:6379/0
+- ** ---------- .> results:     redis://redis:6379/0
+- *** --- * --- .> concurrency: 20 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . screening.tasks.run_screening
+  . screening.tasks.test_task
+
+[2025-05-25 11:45:34,235: INFO/MainProcess] Connected to redis://redis:6379/0
+[2025-05-25 11:45:34,241: INFO/MainProcess] mingle: searching for neighbors
+[2025-05-25 11:45:35,257: INFO/MainProcess] mingle: all alone
+[2025-05-25 11:45:35,288: INFO/MainProcess] celery@bd47e3f77390 ready.
+[2025-05-25 11:45:53,747: INFO/MainProcess] Task screening.tasks.run_screening[d07692ec-2711-4bce-88ae-013426807431] received
+[2025-05-25 11:45:53,752: WARNING/ForkPoolWorker-16] time.struct_time(tm_year=2025, tm_mon=5, tm_mday=25, tm_hour=11, tm_min=45, tm_sec=53, tm_wday=6, tm_yday=145, tm_isdst=0) - Start screening for candidate with id: 5a46eb52-c3c3-4111-a889-1235260c2ae0
+[2025-05-25 11:45:53,834: INFO/MainProcess] Task screening.tasks.run_screening[d07692ec-2711-4bce-88ae-013426807431] received
+[2025-05-25 11:45:53,860: INFO/ForkPoolWorker-16] Task screening.tasks.run_screening[d07692ec-2711-4bce-88ae-013426807431] retry: Retry in 180s: TypeError("send_to_azure() missing 2 required positional arguments: 'status' and 'screening_result'")
+[2025-05-25 11:46:09,688: INFO/MainProcess] Task screening.tasks.run_screening[06ba44c8-1c56-44bc-8ce7-44d47d8b04fd] received
+[2025-05-25 11:46:09,690: WARNING/ForkPoolWorker-16] time.struct_time(tm_year=2025, tm_mon=5, tm_mday=25, tm_hour=11, tm_min=46, tm_sec=9, tm_wday=6, tm_yday=145, tm_isdst=0) - Start screening for candidate with id: f4869f61-bde7-48ca-a610-7583b9419f6f
+[2025-05-25 11:46:09,717: INFO/MainProcess] Task screening.tasks.run_screening[06ba44c8-1c56-44bc-8ce7-44d47d8b04fd] received
+[2025-05-25 11:46:09,729: INFO/ForkPoolWorker-16] Task screening.tasks.run_screening[06ba44c8-1c56-44bc-8ce7-44d47d8b04fd] retry: Retry in 180s: TypeError("send_to_azure() missing 2 required positional arguments: 'status' and 'screening_result'")
+[2025-05-25 11:48:26,466: INFO/MainProcess] Task screening.tasks.run_screening[57a784be-eb1c-497a-b3ba-6984cbe22105] received
+[2025-05-25 11:48:26,470: WARNING/ForkPoolWorker-16] time.struct_time(tm_year=2025, tm_mon=5, tm_mday=25, tm_hour=11, tm_min=48, tm_sec=26, tm_wday=6, tm_yday=145, tm_isdst=0) - Start screening for candidate with id: 62630ad2-8f4c-4f88-99e8-9c46be162b24
+[2025-05-25 11:48:26,503: INFO/MainProcess] Task screening.tasks.run_screening[57a784be-eb1c-497a-b3ba-6984cbe22105] received
+[2025-05-25 11:48:26,516: INFO/ForkPoolWorker-16] Task screening.tasks.run_screening[57a784be-eb1c-497a-b3ba-6984cbe22105] retry: Retry in 180s: TypeError("send_to_azure() missing 2 required positional arguments: 'status' and 'screening_result'")
+[2025-05-25 11:48:53,801: WARNING/ForkPoolWorker-16] time.struct_time(tm_year=2025, tm_mon=5, tm_mday=25, tm_hour=11, tm_min=48, tm_sec=53, tm_wday=6, tm_yday=145, tm_isdst=0) - Start screening for candidate with id: 5a46eb52-c3c3-4111-a889-1235260c2ae0
+[2025-05-25 11:48:53,867: INFO/MainProcess] Task screening.tasks.run_screening[d07692ec-2711-4bce-88ae-013426807431] received
+[2025-05-25 11:48:53,879: INFO/ForkPoolWorker-16] Task screening.tasks.run_screening[d07692ec-2711-4bce-88ae-013426807431] retry: Retry in 180s: TypeError("send_to_azure() missing 2 required positional arguments: 'status' and 'screening_result'")
+[2025-05-25 11:49:09,702: WARNING/ForkPoolWorker-16] time.struct_time(tm_year=2025, tm_mon=5, tm_mday=25, tm_hour=11, tm_min=49, tm_sec=9, tm_wday=6, tm_yday=145, tm_isdst=0) - Start screening for candidate with id: f4869f61-bde7-48ca-a610-7583b9419f6f
+[2025-05-25 11:49:09,731: INFO/MainProcess] Task screening.tasks.run_screening[06ba44c8-1c56-44bc-8ce7-44d47d8b04fd] received
+[2025-05-25 11:49:09,749: INFO/ForkPoolWorker-16] Task screening.tasks.run_screening[06ba44c8-1c56-44bc-8ce7-44d47d8b04fd] retry: Retry in 180s: TypeError("send_to_azure() missing 2 required positional arguments: 'status' and 'screening_result'")
+[2025-05-25 11:51:26,489: WARNING/ForkPoolWorker-16] time.struct_time(tm_year=2025, tm_mon=5, tm_mday=25, tm_hour=11, tm_min=51, tm_sec=26, tm_wday=6, tm_yday=145, tm_isdst=0) - Start screening for candidate with id: 62630ad2-8f4c-4f88-99e8-9c46be162b24
+[2025-05-25 11:51:26,534: INFO/MainProcess] Task screening.tasks.run_screening[57a784be-eb1c-497a-b3ba-6984cbe22105] received
+[2025-05-25 11:51:26,549: INFO/ForkPoolWorker-16] Task screening.tasks.run_screening[57a784be-eb1c-497a-b3ba-6984cbe22105] retry: Retry in 180s: TypeError("send_to_azure() missing 2 required positional arguments: 'status' and 'screening_result'")
+[2025-05-25 11:51:53,854: WARNING/ForkPoolWorker-16] time.struct_time(tm_year=2025, tm_mon=5, tm_mday=25, tm_hour=11, tm_min=51, tm_sec=53, tm_wday=6, tm_yday=145, tm_isdst=0) - Start screening for candidate with id: 5a46eb52-c3c3-4111-a889-1235260c2ae0
+[2025-05-25 11:51:53,882: INFO/MainProcess] Task screening.tasks.run_screening[d07692ec-2711-4bce-88ae-013426807431] received
+[2025-05-25 11:51:53,897: INFO/ForkPoolWorker-16] Task screening.tasks.run_screening[d07692ec-2711-4bce-88ae-013426807431] retry: Retry in 180s: TypeError("send_to_azure() missing 2 required positional arguments: 'status' and 'screening_result'")
+[2025-05-25 11:52:09,718: WARNING/ForkPoolWorker-16] time.struct_time(tm_year=2025, tm_mon=5, tm_mday=25, tm_hour=11, tm_min=52, tm_sec=9, tm_wday=6, tm_yday=145, tm_isdst=0) - Start screening for candidate with id: f4869f61-bde7-48ca-a610-7583b9419f6f
+[2025-05-25 11:52:09,748: INFO/MainProcess] Task screening.tasks.run_screening[06ba44c8-1c56-44bc-8ce7-44d47d8b04fd] received
+[2025-05-25 11:52:09,763: INFO/ForkPoolWorker-16] Task screening.tasks.run_screening[06ba44c8-1c56-44bc-8ce7-44d47d8b04fd] retry: Retry in 180s: TypeError("send_to_azure() missing 2 required positional arguments: 'status' and 'screening_result'")
+[2025-05-25 11:52:16,715: INFO/MainProcess] Task screening.tasks.run_screening[02cdc074-f87a-4c83-b167-1064f8cb3387] received
+[2025-05-25 11:52:16,716: WARNING/ForkPoolWorker-16] time.struct_time(tm_year=2025, tm_mon=5, tm_mday=25, tm_hour=11, tm_min=52, tm_sec=16, tm_wday=6, tm_yday=145, tm_isdst=0) - Start screening for candidate with id: 966597e4-ade9-47ae-8eec-c781f00185a7
+[2025-05-25 11:52:16,736: INFO/MainProcess] Task screening.tasks.run_screening[02cdc074-f87a-4c83-b167-1064f8cb3387] received
+[2025-05-25 11:52:16,745: INFO/ForkPoolWorker-16] Task screening.tasks.run_screening[02cdc074-f87a-4c83-b167-1064f8cb3387] retry: Retry in 180s: TypeError("send_to_azure() missing 2 required positional arguments: 'status' and 'screening_result'")
+[2025-05-25 12:21:32,025: WARNING/ForkPoolWorker-16] time.struct_time(tm_year=2025, tm_mon=5, tm_mday=25, tm_hour=12, tm_min=21, tm_sec=32, tm_wday=6, tm_yday=145, tm_isdst=0) - Start screening for candidate with id: 62630ad2-8f4c-4f88-99e8-9c46be162b24
+[2025-05-25 12:21:32,048: INFO/MainProcess] Task screening.tasks.run_screening[57a784be-eb1c-497a-b3ba-6984cbe22105] received
+[2025-05-25 12:21:32,066: INFO/ForkPoolWorker-16] Task screening.tasks.run_screening[57a784be-eb1c-497a-b3ba-6984cbe22105] retry: Retry in 180s: TypeError('exceptions must derive from BaseException')
+[2025-05-25 12:21:59,372: WARNING/ForkPoolWorker-16] time.struct_time(tm_year=2025, tm_mon=5, tm_mday=25, tm_hour=12, tm_min=21, tm_sec=59, tm_wday=6, tm_yday=145, tm_isdst=0) - Start screening for candidate with id: 5a46eb52-c3c3-4111-a889-1235260c2ae0
+[2025-05-25 12:21:59,394: ERROR/ForkPoolWorker-16] Task screening.tasks.run_screening[d07692ec-2711-4bce-88ae-013426807431] raised unexpected: TypeError('exceptions must derive from BaseException')
+Traceback (most recent call last):
+  File "/app/screening/tasks.py", line 28, in run_screening
+    candidate = Candidate.objects.get(id=candidate_id)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 649, in get
+    raise self.model.DoesNotExist(
+screening.models.Candidate.DoesNotExist: Candidate matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/app/trace.py", line 453, in trace_task
+    R = retval = fun(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/celery/app/trace.py", line 736, in __protected_call__
+    return self.run(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/celery/app/autoretry.py", line 60, in run
+    ret = task.retry(exc=exc, **retry_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/celery/app/task.py", line 743, in retry
+    raise_with_context(exc)
+  File "/usr/local/lib/python3.12/site-packages/celery/app/autoretry.py", line 38, in run
+    return task._orig_run(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/screening/tasks.py", line 66, in run_screening
+    raise self.retry(exc=e)
+          ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/celery/app/task.py", line 743, in retry
+    raise_with_context(exc)
+  File "/app/screening/tasks.py", line 30, in run_screening
+    raise f"ERROR - Run Screening Task - candidate {candidate_id} not found"
+TypeError: exceptions must derive from BaseException
+[2025-05-25 12:22:15,237: WARNING/ForkPoolWorker-16] time.struct_time(tm_year=2025, tm_mon=5, tm_mday=25, tm_hour=12, tm_min=22, tm_sec=15, tm_wday=6, tm_yday=145, tm_isdst=0) - Start screening for candidate with id: f4869f61-bde7-48ca-a610-7583b9419f6f
+[2025-05-25 12:22:15,252: ERROR/ForkPoolWorker-16] Task screening.tasks.run_screening[06ba44c8-1c56-44bc-8ce7-44d47d8b04fd] raised unexpected: TypeError('exceptions must derive from BaseException')
+Traceback (most recent call last):
+  File "/app/screening/tasks.py", line 28, in run_screening
+    candidate = Candidate.objects.get(id=candidate_id)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 649, in get
+    raise self.model.DoesNotExist(
+screening.models.Candidate.DoesNotExist: Candidate matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/app/trace.py", line 453, in trace_task
+    R = retval = fun(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/celery/app/trace.py", line 736, in __protected_call__
+    return self.run(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/celery/app/autoretry.py", line 60, in run
+    ret = task.retry(exc=exc, **retry_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/celery/app/task.py", line 743, in retry
+    raise_with_context(exc)
+  File "/usr/local/lib/python3.12/site-packages/celery/app/autoretry.py", line 38, in run
+    return task._orig_run(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/screening/tasks.py", line 66, in run_screening
+    raise self.retry(exc=e)
+          ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/celery/app/task.py", line 743, in retry
+    raise_with_context(exc)
+  File "/app/screening/tasks.py", line 30, in run_screening
+    raise f"ERROR - Run Screening Task - candidate {candidate_id} not found"
+TypeError: exceptions must derive from BaseException
+[2025-05-25 12:22:22,228: WARNING/ForkPoolWorker-16] time.struct_time(tm_year=2025, tm_mon=5, tm_mday=25, tm_hour=12, tm_min=22, tm_sec=22, tm_wday=6, tm_yday=145, tm_isdst=0) - Start screening for candidate with id: 966597e4-ade9-47ae-8eec-c781f00185a7
+[2025-05-25 12:22:22,249: INFO/MainProcess] Task screening.tasks.run_screening[02cdc074-f87a-4c83-b167-1064f8cb3387] received
+[2025-05-25 12:22:22,266: INFO/ForkPoolWorker-16] Task screening.tasks.run_screening[02cdc074-f87a-4c83-b167-1064f8cb3387] retry: Retry in 180s: TypeError("send_to_azure() missing 2 required positional arguments: 'status' and 'screening_result'")
+[2025-05-25 12:24:32,033: WARNING/ForkPoolWorker-16] time.struct_time(tm_year=2025, tm_mon=5, tm_mday=25, tm_hour=12, tm_min=24, tm_sec=32, tm_wday=6, tm_yday=145, tm_isdst=0) - Start screening for candidate with id: 62630ad2-8f4c-4f88-99e8-9c46be162b24
+[2025-05-25 12:24:32,073: ERROR/ForkPoolWorker-16] Task screening.tasks.run_screening[57a784be-eb1c-497a-b3ba-6984cbe22105] raised unexpected: TypeError('exceptions must derive from BaseException')
+Traceback (most recent call last):
+  File "/app/screening/tasks.py", line 28, in run_screening
+    candidate = Candidate.objects.get(id=candidate_id)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 649, in get
+    raise self.model.DoesNotExist(
+screening.models.Candidate.DoesNotExist: Candidate matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/app/trace.py", line 453, in trace_task
+    R = retval = fun(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/celery/app/trace.py", line 736, in __protected_call__
+    return self.run(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/celery/app/autoretry.py", line 60, in run
+    ret = task.retry(exc=exc, **retry_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/celery/app/task.py", line 743, in retry
+    raise_with_context(exc)
+  File "/usr/local/lib/python3.12/site-packages/celery/app/autoretry.py", line 38, in run
+    return task._orig_run(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/screening/tasks.py", line 66, in run_screening
+  File "/usr/local/lib/python3.12/site-packages/celery/app/task.py", line 743, in retry
+    raise_with_context(exc)
+  File "/app/screening/tasks.py", line 30, in run_screening
+    raise f"ERROR - Run Screening Task - candidate {candidate_id} not found"
+TypeError: exceptions must derive from BaseException
+[2025-05-25 12:25:22,234: WARNING/ForkPoolWorker-16] time.struct_time(tm_year=2025, tm_mon=5, tm_mday=25, tm_hour=12, tm_min=25, tm_sec=22, tm_wday=6, tm_yday=145, tm_isdst=0) - Start screening for candidate with id: 966597e4-ade9-47ae-8eec-c781f00185a7
+[2025-05-25 12:25:22,282: INFO/MainProcess] Task screening.tasks.run_screening[02cdc074-f87a-4c83-b167-1064f8cb3387] received
+[2025-05-25 12:25:22,308: INFO/ForkPoolWorker-16] Task screening.tasks.run_screening[02cdc074-f87a-4c83-b167-1064f8cb3387] retry: Retry in 180s: TypeError("send_to_azure() missing 2 required positional arguments: 'status' and 'screening_result'")
+[2025-05-25 12:28:22,269: WARNING/ForkPoolWorker-16] time.struct_time(tm_year=2025, tm_mon=5, tm_mday=25, tm_hour=12, tm_min=28, tm_sec=22, tm_wday=6, tm_yday=145, tm_isdst=0) - Start screening for candidate with id: 966597e4-ade9-47ae-8eec-c781f00185a7
+[2025-05-25 12:28:22,322: ERROR/ForkPoolWorker-16] Task screening.tasks.run_screening[02cdc074-f87a-4c83-b167-1064f8cb3387] raised unexpected: TypeError("send_to_azure() missing 2 required positional arguments: 'status' and 'screening_result'")
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/celery/app/trace.py", line 453, in trace_task
+    R = retval = fun(*args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/celery/app/trace.py", line 736, in __protected_call__
+    return self.run(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/celery/app/autoretry.py", line 60, in run
+    ret = task.retry(exc=exc, **retry_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/celery/app/task.py", line 743, in retry
+    raise_with_context(exc)
+  File "/usr/local/lib/python3.12/site-packages/celery/app/autoretry.py", line 38, in run
+    return task._orig_run(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/screening/tasks.py", line 66, in run_screening
+    "status": candidate.status,
+      ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/celery/app/task.py", line 743, in retry
+    raise_with_context(exc)
+  File "/app/screening/tasks.py", line 59, in run_screening
+    Candidate.objects.filter(id=candidate.id).update(
+TypeError: send_to_azure() missing 2 required positional arguments: 'status' and 'screening_result'
+[2025-05-25 12:40:03,613: INFO/MainProcess] Task screening.tasks.run_screening[7ecaed56-365c-41de-9dba-fa81f10c72ac] received
+[2025-05-25 12:40:03,616: WARNING/ForkPoolWorker-16] time.struct_time(tm_year=2025, tm_mon=5, tm_mday=25, tm_hour=12, tm_min=40, tm_sec=3, tm_wday=6, tm_yday=145, tm_isdst=0) - Start screening for candidate with id: e35fe596-3488-48ae-a3d4-9735fb0ea36f
+[2025-05-25 12:40:03,646: INFO/MainProcess] Task screening.tasks.run_screening[7ecaed56-365c-41de-9dba-fa81f10c72ac] received
+[2025-05-25 12:40:03,668: INFO/ForkPoolWorker-16] Task screening.tasks.run_screening[7ecaed56-365c-41de-9dba-fa81f10c72ac] retry: Retry in 180s: TypeError("send_to_azure() missing 2 required positional arguments: 'status' and 'screening_result'")
+[2025-05-25 12:40:09,930: INFO/MainProcess] Task screening.tasks.run_screening[4ce78ee3-713c-42da-850d-379568464ad2] received
+[2025-05-25 12:40:09,932: WARNING/ForkPoolWorker-16] time.struct_time(tm_year=2025, tm_mon=5, tm_mday=25, tm_hour=12, tm_min=40, tm_sec=9, tm_wday=6, tm_yday=145, tm_isdst=0) - Start screening for candidate with id: 0d159b15-5e7e-4a4e-b99d-936b25040cd1
+[2025-05-25 12:40:09,950: INFO/MainProcess] Task screening.tasks.run_screening[4ce78ee3-713c-42da-850d-379568464ad2] received
+[2025-05-25 12:40:09,958: INFO/ForkPoolWorker-16] Task screening.tasks.run_screening[4ce78ee3-713c-42da-850d-379568464ad2] retry: Retry in 180s: TypeError("send_to_azure() missing 2 required positional arguments: 'status' and 'screening_result'")
+/usr/local/lib/python3.12/site-packages/celery/platforms.py:841: SecurityWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  warnings.warn(SecurityWarning(ROOT_DISCOURAGED.format(
+ 
+ -------------- celery@bd47e3f77390 v5.5.2 (immunity)
+--- ***** ----- 
+-- ******* ---- Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36 2025-05-25 12:40:53
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         app:0x7fc027280380
+- ** ---------- .> transport:   redis://redis:6379/0
+- ** ---------- .> results:     redis://redis:6379/0
+- *** --- * --- .> concurrency: 20 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . screening.tasks.run_screening
+  . screening.tasks.test_task
+
+[2025-05-25 12:40:54,770: INFO/MainProcess] Connected to redis://redis:6379/0
+[2025-05-25 12:40:54,775: INFO/MainProcess] mingle: searching for neighbors
+[2025-05-25 12:40:55,786: INFO/MainProcess] mingle: all alone
+[2025-05-25 12:40:55,826: INFO/MainProcess] celery@bd47e3f77390 ready.
+[2025-05-25 12:40:56,978: INFO/MainProcess] Task screening.tasks.run_screening[1017b600-f7d0-4add-afcb-71456537f9c2] received
+[2025-05-25 12:40:56,982: WARNING/ForkPoolWorker-16] time.struct_time(tm_year=2025, tm_mon=5, tm_mday=25, tm_hour=12, tm_min=40, tm_sec=56, tm_wday=6, tm_yday=145, tm_isdst=0) - Start screening for candidate with id: 4b292381-c3b6-4ecd-986b-9b5b18f19a06
+[2025-05-25 12:40:57,035: INFO/MainProcess] Task screening.tasks.run_screening[1017b600-f7d0-4add-afcb-71456537f9c2] received
+[2025-05-25 12:40:57,052: INFO/ForkPoolWorker-16] Task screening.tasks.run_screening[1017b600-f7d0-4add-afcb-71456537f9c2] retry: Retry in 180s: TypeError("'>' not supported between instances of 'QuerySet' and 'int'")
+[2025-05-25 12:41:00,531: INFO/MainProcess] Task screening.tasks.run_screening[ca47ee81-0511-40cb-b27b-4e1179e4ca69] received
+[2025-05-25 12:41:00,532: WARNING/ForkPoolWorker-16] time.struct_time(tm_year=2025, tm_mon=5, tm_mday=25, tm_hour=12, tm_min=41, tm_sec=0, tm_wday=6, tm_yday=145, tm_isdst=0) - Start screening for candidate with id: 6f9f68d8-63e1-49a9-ad7c-f042d6aec60b
+[2025-05-25 12:41:00,552: INFO/MainProcess] Task screening.tasks.run_screening[ca47ee81-0511-40cb-b27b-4e1179e4ca69] received
+[2025-05-25 12:41:00,563: INFO/ForkPoolWorker-16] Task screening.tasks.run_screening[ca47ee81-0511-40cb-b27b-4e1179e4ca69] retry: Retry in 180s: TypeError("'>' not supported between instances of 'QuerySet' and 'int'")
+/usr/local/lib/python3.12/site-packages/celery/platforms.py:841: SecurityWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  warnings.warn(SecurityWarning(ROOT_DISCOURAGED.format(
+ 
+ -------------- celery@bd47e3f77390 v5.5.2 (immunity)
+--- ***** ----- 
+-- ******* ---- Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36 2025-05-25 12:42:10
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         app:0x7f4769865160
+- ** ---------- .> transport:   redis://redis:6379/0
+- ** ---------- .> results:     redis://redis:6379/0
+- *** --- * --- .> concurrency: 20 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . screening.tasks.run_screening
+  . screening.tasks.test_task
+
+[2025-05-25 12:42:11,480: INFO/MainProcess] Connected to redis://redis:6379/0
+[2025-05-25 12:42:11,483: INFO/MainProcess] mingle: searching for neighbors
+[2025-05-25 12:42:12,491: INFO/MainProcess] mingle: all alone
+[2025-05-25 12:42:12,521: INFO/MainProcess] celery@bd47e3f77390 ready.
+[2025-05-25 12:42:19,078: INFO/MainProcess] Task screening.tasks.run_screening[4d48188a-0269-4dc3-befb-2337c12e289b] received
+[2025-05-25 12:42:19,080: WARNING/ForkPoolWorker-16] time.struct_time(tm_year=2025, tm_mon=5, tm_mday=25, tm_hour=12, tm_min=42, tm_sec=19, tm_wday=6, tm_yday=145, tm_isdst=0) - Start screening for candidate with id: a95e405b-e984-4795-96e8-1bbb072dcd86
+[2025-05-25 12:42:19,118: INFO/MainProcess] Task screening.tasks.run_screening[4d48188a-0269-4dc3-befb-2337c12e289b] received
+[2025-05-25 12:42:19,139: INFO/ForkPoolWorker-16] Task screening.tasks.run_screening[4d48188a-0269-4dc3-befb-2337c12e289b] retry: Retry in 180s: TypeError("send_to_azure() missing 2 required positional arguments: 'status' and 'screening_result'")
+[2025-05-25 12:42:46,786: INFO/MainProcess] Task screening.tasks.run_screening[87a298c3-0fbe-46ae-a681-9238f0e5fc8e] received
+[2025-05-25 12:42:46,790: WARNING/ForkPoolWorker-16] time.struct_time(tm_year=2025, tm_mon=5, tm_mday=25, tm_hour=12, tm_min=42, tm_sec=46, tm_wday=6, tm_yday=145, tm_isdst=0) - Start screening for candidate with id: 6c54420b-bab9-46b7-9bdc-281db86e9307
+[2025-05-25 12:42:46,815: INFO/MainProcess] Task screening.tasks.run_screening[87a298c3-0fbe-46ae-a681-9238f0e5fc8e] received
+[2025-05-25 12:42:46,827: INFO/ForkPoolWorker-16] Task screening.tasks.run_screening[87a298c3-0fbe-46ae-a681-9238f0e5fc8e] retry: Retry in 180s: TypeError("send_to_azure() missing 2 required positional arguments: 'status' and 'screening_result'")
+[2025-05-25 12:42:50,053: INFO/MainProcess] Task screening.tasks.run_screening[88515066-b8a2-4993-ad63-616da06363e6] received
+[2025-05-25 12:42:50,054: WARNING/ForkPoolWorker-16] time.struct_time(tm_year=2025, tm_mon=5, tm_mday=25, tm_hour=12, tm_min=42, tm_sec=50, tm_wday=6, tm_yday=145, tm_isdst=0) - Start screening for candidate with id: 52f9ea5b-34e5-48c7-9e0f-79b1e5228155
+[2025-05-25 12:42:50,081: INFO/MainProcess] Task screening.tasks.run_screening[88515066-b8a2-4993-ad63-616da06363e6] received
+[2025-05-25 12:42:50,092: INFO/ForkPoolWorker-16] Task screening.tasks.run_screening[88515066-b8a2-4993-ad63-616da06363e6] retry: Retry in 180s: TypeError("send_to_azure() missing 2 required positional arguments: 'status' and 'screening_result'")
+/usr/local/lib/python3.12/site-packages/celery/platforms.py:841: SecurityWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  warnings.warn(SecurityWarning(ROOT_DISCOURAGED.format(
+ 
+ -------------- celery@bd47e3f77390 v5.5.2 (immunity)
+--- ***** ----- 
+-- ******* ---- Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36 2025-05-25 12:45:03
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         app:0x7f0cf83fcad0
+- ** ---------- .> transport:   redis://redis:6379/0
+- ** ---------- .> results:     redis://redis:6379/0
+- *** --- * --- .> concurrency: 20 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . screening.tasks.run_screening
+  . screening.tasks.test_task
+
+[2025-05-25 12:45:04,670: INFO/MainProcess] Connected to redis://redis:6379/0
+[2025-05-25 12:45:04,673: INFO/MainProcess] mingle: searching for neighbors
+[2025-05-25 12:45:05,686: INFO/MainProcess] mingle: all alone
+[2025-05-25 12:45:05,713: INFO/MainProcess] celery@bd47e3f77390 ready.
+[2025-05-25 12:45:19,627: INFO/MainProcess] Task screening.tasks.run_screening[3b3d11eb-74d7-44d5-b4cf-12beb69fa7a6] received
+[2025-05-25 12:45:19,643: WARNING/ForkPoolWorker-16] time.struct_time(tm_year=2025, tm_mon=5, tm_mday=25, tm_hour=12, tm_min=45, tm_sec=19, tm_wday=6, tm_yday=145, tm_isdst=0) - Start screening for candidate with id: 3356ee50-5a18-46b8-912b-1d18b43d9069
+[2025-05-25 12:45:19,696: INFO/MainProcess] Task screening.tasks.run_screening[3b3d11eb-74d7-44d5-b4cf-12beb69fa7a6] received
+[2025-05-25 12:45:19,712: INFO/ForkPoolWorker-16] Task screening.tasks.run_screening[3b3d11eb-74d7-44d5-b4cf-12beb69fa7a6] retry: Retry in 180s: TypeError('Object of type Check is not JSON serializable')
+[2025-05-25 12:45:29,635: INFO/MainProcess] Task screening.tasks.run_screening[6f222f7a-270c-4f07-bfdc-bec0b90d9ada] received
+[2025-05-25 12:45:29,636: WARNING/ForkPoolWorker-16] time.struct_time(tm_year=2025, tm_mon=5, tm_mday=25, tm_hour=12, tm_min=45, tm_sec=29, tm_wday=6, tm_yday=145, tm_isdst=0) - Start screening for candidate with id: af518e6d-1754-408b-a955-909769493238
+[2025-05-25 12:45:29,663: INFO/MainProcess] Task screening.tasks.run_screening[6f222f7a-270c-4f07-bfdc-bec0b90d9ada] received
+[2025-05-25 12:45:29,676: INFO/ForkPoolWorker-16] Task screening.tasks.run_screening[6f222f7a-270c-4f07-bfdc-bec0b90d9ada] retry: Retry in 180s: TypeError('Object of type Check is not JSON serializable')
+/usr/local/lib/python3.12/site-packages/celery/platforms.py:841: SecurityWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  warnings.warn(SecurityWarning(ROOT_DISCOURAGED.format(
+ 
+ -------------- celery@bd47e3f77390 v5.5.2 (immunity)
+--- ***** ----- 
+-- ******* ---- Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36 2025-05-25 12:47:52
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         app:0x7ff1d48b95b0
+- ** ---------- .> transport:   redis://redis:6379/0
+- ** ---------- .> results:     redis://redis:6379/0
+- *** --- * --- .> concurrency: 20 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . screening.tasks.run_screening
+  . screening.tasks.test_task
+
+[2025-05-25 12:47:53,678: INFO/MainProcess] Connected to redis://redis:6379/0
+[2025-05-25 12:47:53,681: INFO/MainProcess] mingle: searching for neighbors
+[2025-05-25 12:47:54,691: INFO/MainProcess] mingle: all alone
+[2025-05-25 12:47:54,724: INFO/MainProcess] celery@bd47e3f77390 ready.
+[2025-05-25 12:48:06,045: INFO/MainProcess] Task screening.tasks.run_screening[f462d06f-14ff-4f6b-b254-f381a6d32cb7] received
+[2025-05-25 12:48:06,047: WARNING/ForkPoolWorker-16] time.struct_time(tm_year=2025, tm_mon=5, tm_mday=25, tm_hour=12, tm_min=48, tm_sec=6, tm_wday=6, tm_yday=145, tm_isdst=0) - Start screening for candidate with id: 4f42f7b0-fcfd-40d1-8e29-7c2e3ee94732
+[2025-05-25 12:48:06,089: INFO/MainProcess] Task screening.tasks.run_screening[f462d06f-14ff-4f6b-b254-f381a6d32cb7] received
+[2025-05-25 12:48:06,107: INFO/ForkPoolWorker-16] Task screening.tasks.run_screening[f462d06f-14ff-4f6b-b254-f381a6d32cb7] retry: Retry in 180s: AttributeError("'Candidate' object has no attribute 'update'")
+/usr/local/lib/python3.12/site-packages/celery/platforms.py:841: SecurityWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  warnings.warn(SecurityWarning(ROOT_DISCOURAGED.format(
+ 
+ -------------- celery@bd47e3f77390 v5.5.2 (immunity)
+--- ***** ----- 
+-- ******* ---- Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36 2025-05-25 12:50:16
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         app:0x7f2e15200dd0
+- ** ---------- .> transport:   redis://redis:6379/0
+- ** ---------- .> results:     redis://redis:6379/0
+- *** --- * --- .> concurrency: 20 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . screening.tasks.run_screening
+  . screening.tasks.test_task
+
+[2025-05-25 12:50:17,123: INFO/MainProcess] Connected to redis://redis:6379/0
+[2025-05-25 12:50:17,127: INFO/MainProcess] mingle: searching for neighbors
+[2025-05-25 12:50:18,139: INFO/MainProcess] mingle: all alone
+[2025-05-25 12:50:18,171: INFO/MainProcess] celery@bd47e3f77390 ready.
+[2025-05-25 12:50:29,621: INFO/MainProcess] Task screening.tasks.run_screening[ff8b04bb-bfb3-403f-a99d-e32651639eb0] received
+[2025-05-25 12:50:29,623: WARNING/ForkPoolWorker-16] time.struct_time(tm_year=2025, tm_mon=5, tm_mday=25, tm_hour=12, tm_min=50, tm_sec=29, tm_wday=6, tm_yday=145, tm_isdst=0) - Start screening for candidate with id: 98686f2d-6d1a-4244-8c5a-f7f0f8836345
+[2025-05-25 12:50:37,490: WARNING/ForkPoolWorker-16] Azure communication failed: HTTPConnectionPool(host='azure-mock.local', port=80): Max retries exceeded with url: /api/events (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x7f2e11ea8830>: Failed to resolve 'azure-mock.local' ([Errno -2] Name or service not known)"))
+[2025-05-25 12:50:37,496: INFO/ForkPoolWorker-16] Task screening.tasks.run_screening[ff8b04bb-bfb3-403f-a99d-e32651639eb0] succeeded in 7.87363458999971s: 'time.struct_time(tm_year=2025, tm_mon=5, tm_mday=25, tm_hour=12, tm_min=50, tm_sec=37, tm_wday=6, tm_yday=145, tm_isdst=0) - Screening complete for candidate with id: 98686f2d-6d1a-4244-8c5a-f7f0f8836345'
+[2025-05-25 12:50:53,119: INFO/MainProcess] Task screening.tasks.run_screening[6309803f-6816-42fe-9203-5483fc519674] received
+[2025-05-25 12:50:53,121: WARNING/ForkPoolWorker-16] time.struct_time(tm_year=2025, tm_mon=5, tm_mday=25, tm_hour=12, tm_min=50, tm_sec=53, tm_wday=6, tm_yday=145, tm_isdst=0) - Start screening for candidate with id: 568e95d5-d2d7-4e8d-bcee-5b104d0489fc
+[2025-05-25 12:50:57,101: WARNING/ForkPoolWorker-16] Azure communication failed: HTTPConnectionPool(host='azure-mock.local', port=80): Max retries exceeded with url: /api/events (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x7f2e11eab650>: Failed to resolve 'azure-mock.local' ([Errno -2] Name or service not known)"))
+[2025-05-25 12:50:57,103: INFO/ForkPoolWorker-16] Task screening.tasks.run_screening[6309803f-6816-42fe-9203-5483fc519674] succeeded in 3.984364240001014s: 'time.struct_time(tm_year=2025, tm_mon=5, tm_mday=25, tm_hour=12, tm_min=50, tm_sec=57, tm_wday=6, tm_yday=145, tm_isdst=0) - Screening complete for candidate with id: 568e95d5-d2d7-4e8d-bcee-5b104d0489fc'
+/usr/local/lib/python3.12/site-packages/celery/platforms.py:841: SecurityWarning: You're running the worker with superuser privileges: this is
+absolutely not recommended!
+
+Please specify a different user using the --uid option.
+
+User information: uid=0 euid=0 gid=0 egid=0
+
+  warnings.warn(SecurityWarning(ROOT_DISCOURAGED.format(
+ 
+ -------------- celery@bd47e3f77390 v5.5.2 (immunity)
+--- ***** ----- 
+-- ******* ---- Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.36 2025-05-25 12:51:55
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         app:0x7f3de87385f0
+- ** ---------- .> transport:   redis://redis:6379/0
+- ** ---------- .> results:     redis://redis:6379/0
+- *** --- * --- .> concurrency: 20 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . screening.tasks.run_screening
+  . screening.tasks.test_task
+
+[2025-05-25 12:51:56,640: INFO/MainProcess] Connected to redis://redis:6379/0
+[2025-05-25 12:51:56,649: INFO/MainProcess] mingle: searching for neighbors
+[2025-05-25 12:51:57,662: INFO/MainProcess] mingle: all alone
+[2025-05-25 12:51:57,701: INFO/MainProcess] celery@bd47e3f77390 ready.
+[2025-05-25 12:52:01,067: INFO/MainProcess] Task screening.tasks.run_screening[665b5316-87ed-430b-af29-700746f0b2ed] received
+[2025-05-25 12:52:01,069: WARNING/ForkPoolWorker-16] time.struct_time(tm_year=2025, tm_mon=5, tm_mday=25, tm_hour=12, tm_min=52, tm_sec=1, tm_wday=6, tm_yday=145, tm_isdst=0) - Start screening for candidate with id: 1e97ab02-c85d-42c1-95ca-9eb7731a6521
+[2025-05-25 12:52:05,126: WARNING/ForkPoolWorker-16] Azure communication failed: HTTPConnectionPool(host='azure-mock.local', port=80): Max retries exceeded with url: /api/events (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x7f3de53d1f10>: Failed to resolve 'azure-mock.local' ([Errno -2] Name or service not known)"))
+[2025-05-25 12:52:05,132: INFO/ForkPoolWorker-16] Task screening.tasks.run_screening[665b5316-87ed-430b-af29-700746f0b2ed] succeeded in 4.062978617999761s: 'time.struct_time(tm_year=2025, tm_mon=5, tm_mday=25, tm_hour=12, tm_min=52, tm_sec=5, tm_wday=6, tm_yday=145, tm_isdst=0) - Screening complete for candidate with id: 1e97ab02-c85d-42c1-95ca-9eb7731a6521'
+[2025-05-25 12:52:48,854: INFO/MainProcess] Task screening.tasks.run_screening[f9aa08d1-50d2-41f0-983b-41e5a96f368c] received
+[2025-05-25 12:52:48,857: WARNING/ForkPoolWorker-16] time.struct_time(tm_year=2025, tm_mon=5, tm_mday=25, tm_hour=12, tm_min=52, tm_sec=48, tm_wday=6, tm_yday=145, tm_isdst=0) - Start screening for candidate with id: 86a9f022-45c5-4561-83d5-4f8c135d5cd9
+[2025-05-25 12:52:52,871: WARNING/ForkPoolWorker-16] Azure communication failed: HTTPConnectionPool(host='azure-mock.local', port=80): Max retries exceeded with url: /api/events (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x7f3de53d3bf0>: Failed to resolve 'azure-mock.local' ([Errno -2] Name or service not known)"))
+[2025-05-25 12:52:52,873: INFO/ForkPoolWorker-16] Task screening.tasks.run_screening[f9aa08d1-50d2-41f0-983b-41e5a96f368c] succeeded in 4.0160806409985526s: 'time.struct_time(tm_year=2025, tm_mon=5, tm_mday=25, tm_hour=12, tm_min=52, tm_sec=52, tm_wday=6, tm_yday=145, tm_isdst=0) - Screening complete for candidate with id: 86a9f022-45c5-4561-83d5-4f8c135d5cd9'

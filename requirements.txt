@@ -1,0 +1,12 @@
+Django>=4.2
+djangorestframework
+psycopg2-binary
+celery>=5.3
+redis
+djangorestframework-simplejwt
+requests
+email-validator
+grpcio
+grpcio-tools
+django-grpc
+watchdog
